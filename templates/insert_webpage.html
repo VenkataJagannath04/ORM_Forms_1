@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Insertion of Webpage model</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="tn">topic_name</label>
+            <input type="text" name="tn" id="tn"><br>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="url">url</label>
+            <input type="text" name="url" id="url"><br>
+
+            <input type="submit" value="insert_webpage">
+        </form>
+    </center>
+</body>
+</html>
